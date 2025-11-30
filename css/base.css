@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap");
+
+:root {
+    --base-font-size: 18px;
+    --base-font-family: "Roboto", sans-serif;
+    --base-font-color: white;
+    --page-background: rgb(14, 14, 14);
+    --button-background: rgb(27, 98, 204);
+    --box-background: rgba(61, 61, 61, 0.627);
+}
+
+html {
+    padding: 20px;
+    font-size: var(--base-font-size);
+    font-family: var(--base-font-family);
+    color: var(--base-font-color);
+    background-color: var(--page-background);
+}
+
+section {
+    width: 440px;
+}
+
+h2 {
+    display: inline;
+    vertical-align: middle;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+input, button {
+    font-size: inherit;
+    font-family: inherit;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    color: inherit;
+    background-color: var(--button-background);
+    cursor: pointer;
+}
+
+.centered-panel {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.section-content {
+    margin-top: 20px;
+}
+
+.box {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--box-background);
+}
+
+.title-icon {
+    margin-left: 10px;
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+}
+
+.paragraph-icon {
+    margin-left: 10px;
+    width: 17px;
+    height: 17px;
+    vertical-align: middle;
+}
+
+.paragraph-with-icon {
+    vertical-align: middle;
+}
