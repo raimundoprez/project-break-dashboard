@@ -1,0 +1,60 @@
+:root {
+    --list-padding-right: 15px;
+    --list-scrollbar-width: 10px;
+    --list-close-button-width: 16px;
+}
+
+#link-menu {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+#link-list {
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-right: var(--list-padding-right);
+    max-height: 400px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    gap: 10px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+#link-list:empty {
+    display: none;
+}
+
+#link-list::-webkit-scrollbar {
+    width: var(--list-scrollbar-width);
+}
+
+#link-list::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: gray;
+}
+
+.link-box {
+    position: relative;
+    max-width: calc(100% - var(--list-padding-right) - var(--list-scrollbar-width));
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid rgb(103, 103, 103);
+    background-color: rgb(28, 28, 28);
+}
+
+.link-wrapper {
+    overflow: hidden;
+}
+
+.link-close-button {
+    position: absolute;
+    top: calc(var(--list-close-button-width) * -0.5);
+    right: calc(var(--list-close-button-width) * -0.5);
+    width: var(--list-close-button-width);
+    height: var(--list-close-button-width);
+    cursor: pointer;
+}
