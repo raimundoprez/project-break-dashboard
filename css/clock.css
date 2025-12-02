@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100..900&display=swap");
+
+#clock-container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+#clock-container > span {
+    font-family: "Exo 2", sans-serif;
+    text-align: center;
+}
+
+#clock-container > span:nth-child(1) {
+    font-size: 44px;
+    font-weight: 550;
+}
+
+#clock-container > span:nth-child(2) {
+    font-size: 22px;
+}
