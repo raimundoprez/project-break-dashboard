@@ -8,6 +8,8 @@
     --base-font-color: white;
     --button-background: rgb(27, 98, 204);
     --box-background: rgba(61, 61, 61, 0.627);
+    --scrollbar-background: gray;
+    --scrollbar-width: 10px;
 }
 
 html {
@@ -46,6 +48,16 @@ button {
 a {
     color: inherit;
     text-decoration: none;
+}
+
+*::-webkit-scrollbar {
+    width: var(--scrollbar-width);
+    height: var(--scrollbar-width);
+}
+
+*::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: var(--scrollbar-background);
 }
 
 .centered-panel {

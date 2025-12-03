@@ -1,6 +1,5 @@
 :root {
     --list-padding-right: 15px;
-    --list-scrollbar-width: 10px;
     --list-close-button-width: 16px;
 }
 
@@ -28,18 +27,9 @@
     display: none;
 }
 
-#link-list::-webkit-scrollbar {
-    width: var(--list-scrollbar-width);
-}
-
-#link-list::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    background-color: gray;
-}
-
 .link-box {
     position: relative;
-    max-width: calc(100% - var(--list-padding-right) - var(--list-scrollbar-width));
+    max-width: calc(100% - var(--list-padding-right) - var(--scrollbar-width));
     padding: 10px;
     border-radius: 5px;
     border: 2px solid rgb(103, 103, 103);

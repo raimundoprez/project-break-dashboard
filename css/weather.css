@@ -58,12 +58,17 @@
 }
 
 #weather-timetable {
+    padding-bottom: 10px;
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
     gap: 15px;
     overflow-x: scroll;
     overflow-y: hidden;
+}
+
+#weather-timetable:empty {
+    display: none;
 }
 
 .weather-data {
