@@ -1,0 +1,88 @@
+:root {
+    --temp-font-color: rgb(255, 193, 85);
+    --air-background: rgb(181, 255, 135);
+}
+
+#weather-container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    gap: 25px;
+}
+
+#weather-location {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+#weather-current {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    gap: 20px;
+    align-items: center;
+}
+
+#weather-sky {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    gap: 8px;
+    align-items: center;
+}
+
+#weather-sky > span {
+    font-size: 22px;
+}
+
+#weather-sky > img {
+    width: 80px;
+    height: 80px;
+}
+
+#weather-temp {
+    font-size: 32px;
+    color: var(--temp-font-color);
+}
+
+#weather-air {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+#weather-air > p {
+    font-size: 15px;
+    color: var(--air-background);
+}
+
+#weather-timetable {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    gap: 15px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.weather-data {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    gap: 8px;
+    align-items: center;
+}
+
+.weather-data > span {
+    font-size: 19px;
+}
+
+.weather-data > span:last-child {
+    color: var(--temp-font-color);
+}
+
+.weather-data > img {
+    width: 60px;
+    height: 60px;
+}
