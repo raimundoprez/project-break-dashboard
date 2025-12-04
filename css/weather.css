@@ -32,6 +32,7 @@
 }
 
 #weather-sky > span {
+    text-align: center;
     font-size: 22px;
 }
 
@@ -41,6 +42,7 @@
 }
 
 #weather-temp {
+    text-align: center;
     font-size: 32px;
     color: var(--temp-font-color);
 }
@@ -80,6 +82,7 @@
 }
 
 .weather-data > span {
+    text-align: center;
     font-size: 19px;
 }
 
