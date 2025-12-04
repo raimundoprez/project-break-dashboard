@@ -7,7 +7,7 @@
     --base-font-family: "Roboto", sans-serif;
     --base-font-color: white;
     --button-background: rgb(27, 98, 204);
-    --box-background: rgba(61, 61, 61, 0.627);
+    --box-background: rgba(61, 61, 61, 0.798);
     --scrollbar-background: gray;
     --scrollbar-width: 10px;
 }
@@ -89,4 +89,23 @@ a {
 
 .text-with-icon {
     display: inline-block;
+}
+
+#bg-container {
+    position: fixed;
+    inset: 0px;
+    z-index: -1;
+}
+
+#bg-container > div {
+    position: absolute;
+    inset: 0px;
+    opacity: 0;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 0.5s ease-in-out 0s;
+}
+
+#bg-container > div.bg-visible {
+    opacity: 1;
 }
