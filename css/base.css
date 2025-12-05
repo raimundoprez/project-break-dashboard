@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap");
 
 :root {
-    --html-padding: 15px;
     --html-background: rgb(14, 14, 14);
     --base-font-size: 17px;
     --base-font-family: "Roboto", sans-serif;
@@ -13,7 +12,6 @@
 }
 
 html {
-    padding: var(--html-padding);
     background-color: var(--html-background);
     font-size: var(--base-font-size);
     font-family: var(--base-font-family);
@@ -58,6 +56,43 @@ a {
 *::-webkit-scrollbar-thumb {
     border-radius: 10px;
     background-color: var(--scrollbar-background);
+}
+
+header {
+    padding: 15px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap: 100px;
+    align-items: center;
+    background-color: var(--box-background);
+}
+
+header > a > * {
+    vertical-align: middle;
+}
+
+header > a > img {
+    width: 40px;
+    height: 40px;
+}
+
+header > a > span {
+    margin-left: 5px;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+header > nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+header > nav > a > img {
+    width: 40px;
+    height: 40px;
 }
 
 .centered-panel {
