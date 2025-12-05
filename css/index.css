@@ -1,0 +1,28 @@
+main {
+    padding: 40px 10px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    justify-content: center;
+    gap: 30px;
+}
+
+#db-clock {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#db-links {
+    grid-column: 2;
+    grid-row: 1 / 4;
+}
+
+#db-weather {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#db-passwords {
+    grid-column: 1;
+    grid-row: 3;
+}
