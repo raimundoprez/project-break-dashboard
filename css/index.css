@@ -26,3 +26,15 @@ main {
     grid-column: 1;
     grid-row: 3;
 }
+
+@media (max-width: 1280px) {
+    main {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto;
+    }
+
+    #db-links {
+        grid-column: 1;
+        grid-row: 4;
+    }
+}

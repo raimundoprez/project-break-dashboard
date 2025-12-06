@@ -48,3 +48,9 @@
     height: var(--list-close-button-width);
     cursor: pointer;
 }
+
+@media (max-height: 1024px) {
+    #link-list {
+        max-height: 200px;
+    }
+}
