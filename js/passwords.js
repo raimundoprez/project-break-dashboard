@@ -17,8 +17,10 @@ function getRandomElement(obj) {
 
 export function setup(self, parent) {
     self.innerHTML = `
-        <h2>Crea tu contraseña segura</h2>
-        <img class="icon-of-title" src="./img/icons/padlock.png" alt="Un icono de un candado">
+        <div class="text-with-icon">
+            <h2>Crea tu contraseña segura</h2>
+            <img class="icon-of-title" src="./img/icons/padlock.png" alt="Un icono de un candado">
+        </div>
 
         <div id="password-menu" class="box">
             <label for="password-bounds">Número de caracteres de la contraseña</label>
@@ -29,8 +31,11 @@ export function setup(self, parent) {
             </div>
 
             <div id="password-fields">
-                <span class="text-with-icon">Contraseña Generada</span>
-                <img id="password-clipboard" class="icon-of-text" src="./img/icons/clipboard.png" alt="Una imagen de un portapapeles">
+                <div class="text-with-icon">
+                    <span>Contraseña Generada</span>
+                    <img id="password-clipboard" class="icon-of-text" src="./img/icons/clipboard.png" alt="Una imagen de un portapapeles">
+                </div>
+
                 <span id="password-result"></span>
             </div>
         </div>

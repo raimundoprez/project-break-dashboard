@@ -23,8 +23,6 @@ section {
 }
 
 h2 {
-    display: inline-block;
-    margin-bottom: 10px;
     font-size: 26px;
     font-weight: 500;
 }
@@ -114,19 +112,20 @@ header > nav > a > img {
 .icon-of-title {
     width: 25px;
     height: 25px;
-    margin-left: 10px;
-    vertical-align: baseline;
 }
 
 .icon-of-text {
     width: 17px;
     height: 17px;
-    margin-left: 10px;
-    vertical-align: middle;
 }
 
 .text-with-icon {
-    display: inline-block;
+    margin-bottom: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    gap: 10px;
+    align-items: center;
 }
 
 #bg-container {

@@ -98,8 +98,10 @@ function addLink(list, name, url) {
 
 export function setup(self, parent) {
     self.innerHTML = `
-        <h2>Añade tu enlace de interés</h2>
-        <img class="icon-of-title" src="./img/icons/link.png" alt="Un icono de un link">
+        <div class="text-with-icon">
+            <h2>Añade tu enlace de interés</h2>
+            <img class="icon-of-title" src="./img/icons/link.png" alt="Un icono de un link">
+        </div>
 
         <div id="link-menu" class="box">
             <input id="link-name" type="text" placeholder="Nombre del enlace">
